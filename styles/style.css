@@ -1,0 +1,88 @@
+@import 'fonts.css';
+
+/* ROOT START */
+
+:root {
+  --ps400: 'Product-Sans-Regular';
+  --m400: 'Montserrat-Regular';
+  --m700: 'Montserrat-Bold';
+  --bg: #282929;
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #1e2020;
+  --yellow: #ffcb02;
+  --yellow-dark: #d2a90b;
+  --devider-color: #5d5d5d;
+  --logo-gradient: linear-gradient(133deg, var(--white), var(--yellow));
+}
+
+.logo {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  font-family: var(--ps400);
+  line-height: 20px;
+  border: 1px solid transparent;
+  border-image: 1 var(--logo-gradient);
+  padding: 4px 5px 7px 4px;
+  transition: color 0.5s;
+}
+
+.logo:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.dropdown-divider {
+  border-top: 1px solid var(--devider-color);
+}
+/* ROOT END */
+/* ******************************** */
+/* HEADER START */
+
+.header {
+  background: var(--dark);
+}
+
+.header__nav {
+  padding: 23px 0;
+}
+
+.header__logo_white {
+  color: var(--white);
+}
+
+.header__logo_size {
+  font-size: 22px;
+  display: block;
+}
+
+.header__logo-work_position {
+  margin-left: 5px;
+}
+
+.header__logo_position {
+  margin: 0 0 3px 4px;
+}
+
+.logo:hover .header__logo_white{
+  color: var(--yellow);
+}
+
+.nav__link {
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: var(--ps400);
+  font-size: 20px;
+  line-height: 14px;
+  display: block;
+  margin: 0 35px;
+  transition: color 0.5s;
+}
+
+.nav__link:hover {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+/* HEADER END */
